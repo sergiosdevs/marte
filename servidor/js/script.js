@@ -50,7 +50,11 @@ jQuery(function(){
         console.log('rotate to right ...')
         config.sender('right')
     })
-    /*$('#f_vup').click(function(){
+    $('#f_stop').click(function(){
+        console.log('stop de movement ...')
+        config.sender('stop')
+    })
+    $('#f_vup').click(function(){
         console.log('up for the camera')
         config.sender('vup')
     })
@@ -65,13 +69,13 @@ jQuery(function(){
     $('#f_vright').click(function(){
         console.log('turn right for the camera')
         config.sender('vright')
-    })*/
+    })
 
-    joystick=new VirtualJoystick({
-        container:document.getElementById('r_camera'),
-        mouseSupport:true
-    });
-    setInterval(function(){config.vdelta(joystick.deltaX(),joystick.deltaY())},
-        1/2*1000);
+    //joystick=new VirtualJoystick({
+    //    container:document.getElementById('r_camera'),
+    //    mouseSupport:true
+    //});
+    //setInterval(function(){config.vdelta(joystick.deltaX(),joystick.deltaY())},
+    //    1/2*1000);
 })
 
