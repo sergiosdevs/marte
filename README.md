@@ -1,4 +1,3 @@
-
 # PROJECT M.A.R.T.E #
 
 ### About EXOMARS  ###
@@ -15,12 +14,12 @@ The project aims to give people a resource with which to learn the operation of 
 
 ***
 ### ls -la ###
-+ **Servidor**  Archivos fuentes de Configuracion del servidor
-+ **Cerebro**   Archivos de control de Hardware
-+ **Utiles**    Archivos de apoyo
-+ **disenio-grafico** Codigo fuente del disenio grafico
-+ **disenio-mecanico** Codigo fuente del disenio mecanico
-+ **Android**  Archivos Fuente de Android
++ **Servidor**  Source code about configuration server.
++ **Cerebro**   Source code about hardware control.
++ **Utiles**    Support files.
++ **disenio-grafico** Source code and desing files about graphics interface.
++ **disenio-mecanico** Source code and desing files about mechanics.
++ **Android**   Source code about mobile aplication
 
 ***
 ### About us ###
