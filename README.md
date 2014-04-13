@@ -2,7 +2,7 @@
 
 ### About EXOMARS  ###
 
-An educational project focusing on management ExoMars and emulation environment on another planet, presenting a simplified mechanical design and didactic and friendly interface, using a camera for navigation and a microscope for better observation 
+An educational project focusing on management ExoMars and emulation environment on another planet, presenting a simplified mechanical design with a didactic and friendly interface, using a camera for navigation and a microscope for better observation 
 ***
 ### Challenge Description ###
 
@@ -10,7 +10,7 @@ People have created models of the NASA Curiosity rover—this project would try 
 
 ***
 ### Our Description Solution ###
-The project aims to give people a resource with which to learn the operation of a robot through a user-friendly interface and intuitive control, the interface is designed to create a virtual environment that emulates view on another planet and thus better meet the educational part of the project. The robot model aims to present ideas to a simplified design that allows for lower power consumption, redesigning the mechanics to reduce engine movement, plus the possibility to add a microscope for analysis of materials and items of interest.
+The project aims to give people a resource with which they will learn to operate a robot through a friendly-user interface and intuitive control. The interface is designed to create a virtual environment that emulates the view on another planet and thus meet in a better way in the educational part of the project. The robot model aims to present ideas to a simplified design that allows for lower power consumption, redesigning the mechanics to reduce engine movement, plus the possibility to add a microscope for analysis of materials and items of interest.
 
 ***
 ### ls -la ###
@@ -19,13 +19,13 @@ The project aims to give people a resource with which to learn the operation of 
 + **Utiles**    Support files.
 + **disenio-grafico** Source code and desing files about graphics interface.
 + **disenio-mecanico** Source code and desing files about mechanics.
-+ **Android**   Source code about mobile aplication
++ **Android**  Mobile application source code 
 
 ***
 ### About us ###
 
 > Name: Melanie Andrea Alba Sossa
-> > email: Melanie_alba@hotmail.com
+> > email: melanie_alba@hotmail.com
 > >
 > > Telephone: +591 70307059
 > >
