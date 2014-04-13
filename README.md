@@ -1,4 +1,4 @@
-# PROJECT M.A.R.T.E #
+# PROJECT M.A.R.T.E. #
 
 ### About EXOMARS  ###
 
