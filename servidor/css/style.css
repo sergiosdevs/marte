@@ -1,4 +1,4 @@
-html, body, header, section, footer, article, div {
+html, body, header, section, footer, article, div, ul, li {
     margin: 0;
     padding: 0;
 }
@@ -16,18 +16,27 @@ a:active, button:active {
     outline: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
 .clean {
     clear: both;
 }
 
 #video {
     background-color: #000000;
-    background-image: url('/img/test.jpg');
+/*    background-image: url('/img/test.jpg');*/
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
+}
+
+#video>img {
+    width: 100%;
+    height: auto;
 }
 
 #console {
@@ -65,9 +74,9 @@ a:active, button:active {
     align-content: center;
     -webkit-box-align: center;
     -moz-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
+    -webkit-align-items: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end;
     }
 
 .flex-item:nth-child(1) {
@@ -132,29 +141,87 @@ a:active, button:active {
 
 #r_left {
     border: 1px solid #404040;
-    background-color: #303030;
+    background-color: rgba(30, 30, 30, 0.6);
     box-shadow: 1px 1px 2px #000000;
     border-radius: 0.4rem;
+    margin-bottom: 1.0rem;
+    height: 4.8rem;
+}
+
+.flex-container-2 {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-inline-flexbox;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    -webkit-box-direction: normal;
+    -moz-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-box-align: end;
+    -moz-box-align: end;
+    -webkit-align-items: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end;
 }
 
 #r_left>button {
     display: block;
     width: 100%;
-}
-
-#r_left>button:nth-child(1) {
-    margin-bottom: 30%;
-}
-
-#r_left>button:nth-child(2) {
-    margin-top: 30%;
+    padding: 0.25rem;
 }
 
 #r_right {
     border: 1px solid #404040;
-    background-color: #303030;
+    background-color: rgba(30, 30, 30, 0.6);
     box-shadow: 1px 1px 2px #000000;
     border-radius: 0.4rem;
+    margin-bottom: 2.5rem;
+}
+
+.flex-container-3 {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-direction: normal;
+    -moz-box-direction: normal;
+    -webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 #r_right>button {
@@ -163,13 +230,13 @@ a:active, button:active {
 }
 
 #r_center {
-    height: 100%;
+/*  height: 100%; */
 }
 
 #r_power {
     float: left;
     border: 1px solid #404040;
-    background-color: #303030;
+    background-color: rgba(30,30,30,0.6);
     box-shadow: 1px 1px 2px #000000;
     border-radius: 0.4rem;
     padding-bottom: 0.15rem;
@@ -188,28 +255,46 @@ a:active, button:active {
 
 #r_photo>button {
     border: 1px solid #404040;
-    background-color: #303030;
+    background-color: rgba(30, 30, 30, 0.6);
     box-shadow: 1px 1px 2px #000000;
-    width: 80%;
-    height: 80%;
-    border-radius: 50%;
+    width: 37%;
+    border-radius: 40%;
     padding: 0.3rem 0.9rem;
     margin-bottom: 0.7em;
 }
 
+#r_photo>button.active {
+    background-color: #008080;
+}
+
+#r_photo>button:nth-child(1) {
+    background-image: url('/img/glyphicons/glyphicons_008_film.png');
+    background-size: 53% 53%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+#r_photo>button:nth-child(2) {
+    background-image: url('/img/glyphicons/glyphicons_011_camera.png');
+    background-size: 60% 60%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
 #r_camera {
-    background-color: #303030;
+    background-color: rgba(30,30,30,0.6);
     border-radius: 0.75rem;
     border: 1px solid #606060;
     display: block;
     margin: 0 auto;
-    width: 100%;
-    height: 50%;
+    width: 14rem;
+    height: 5.0rem;
+    margin-bottom: 1.0rem;
 }
 
 #r_camera>button {
     position: relative;
-    background-color: #363636;
+    background-color: rgba(36,36,36,0.55);
     border-radius: 0.25rem;
 }
 
@@ -221,25 +306,77 @@ a:active, button:active {
     right: 30%;
 }
 
-#r_camera>button:nth-child(2) {
+#r_camera.video>button:nth-child(2) {
     height: 30%;
     width: 40%;
     left: -42%;
     top: 35%;
 }
 
-#r_camera>button:nth-child(3) {
+#r_camera.photo>button:nth-child(2) {
+   display: none; 
+}
+
+#r_camera.video>button:nth-child(3) {
+    display: none;
+}
+
+#r_camera.photo>button:nth-child(3) {
+    height: 30%;
+    width: 55%;
+    right: 21%;
+    bottom: -35%;
+}
+
+#r_camera.video>button:nth-child(4) {
     height: 30%;
     width: 40%;
     right: -60%;
     bottom: -5%;
 }
 
-#r_camera>button:nth-child(4) {
+#r_camera.photo>button:nth-child(4) {
+    display: none;
+}
+
+#r_camera>button:nth-child(5) {
     height: 30%;
     width: 40%;
     left: -12%;
     right: 30%;
     bottom: -40%;
+}
+
+#r_camera.photo>button:nth-child(5) {
+    left: 30%;
+}
+
+footer {
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(30, 30, 30, 0.6);
+    padding: 0 0.25em;
+    border-top-left-radius: 0.75rem;
+}
+
+footer ul {
+    margin: 0em 0.35em;
+    list-style: none;
+    border-radius: 0.3rem;
+}
+
+footer ul li {
+
+}
+
+footer ul li a {
+    font-size: 0.72rem;
+    color: #ffffff;
+}
+
+footer ul li a:hover {
+
 }
 

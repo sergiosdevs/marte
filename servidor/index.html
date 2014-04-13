@@ -2,16 +2,21 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>M.A.R.T.E.</title>
+        <link rel="icon" type="image/x-icon" href="favicon.ico" />
         <link rel="stylesheet" href="css/style.css" />
         <script src="js/jquery.js"></script>
+        <script src="js/virtualjoystick.js"></script>
         <script src="js/script.js"></script>
     </head>
     <body>
         <div id="wrapper">
-            <div id="video"></div>
+            <div id="video">
+                <img src="http://192.168.5.125:8080/video" />
+            </div>
             <div id="console" class="flex-container">
-                <div id="r_left">
+                <div id="r_left" class="flex-container-2">
                     <button id="f_up">top</button>
                     <button id="f_down">bottom</button>
                 </div>
@@ -21,21 +26,28 @@
                         <button id="f_on">on</button>
                     </div>
                     <div id="r_photo">
-                        <button id="f_shot">s</button>
+                        <button id="f_video" class="active">&nbsp;</button>
+                        <button id="f_photo">&nbsp;</button>
                     </div>
                     <div class="clean"></div>
-                    <div id="r_camera">
+                    <div id="r_camera" class="photo">
                         <button id="f_vup">top</button>
                         <button id="f_vleft">left</button>
+                        <button id="f_shot">shot</button>
                         <button id="f_vright">right</button>
                         <button id="f_vdown">bottom</button>
                     </div>
                 </div>
-                <div id="r_right">
+                <div id="r_right" class="flex-container-3">
                     <button id="f_left">left</button>
                     <button id="f_right">right</button>
                 </div>
             </div>
+            <footer>
+                <ul>
+                    <li><a href="/acerca.html">acerca de Marte</a></li>
+                </ul>
+            </footer>
         </div>
     </body>
 </html>
