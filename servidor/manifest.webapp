@@ -1,0 +1,16 @@
+{
+    "name": "M.A.R.T.E.",
+    "description": "Control para el robot exomars",
+    "launch_path": "/index.html",
+    "fullscreen": true,
+    "icons": {
+        "60": "/img/app/logo60.png",
+        "128": "/img/app/logo128.png"
+    },
+    "developer": {
+        "name": "M.A.R.T.E.",
+        "url": "https://github.com/ccaballero"
+    },
+    "default_locale": "en"
+}
+
