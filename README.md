@@ -14,12 +14,12 @@ The project aims to give people a resource with which they will learn to operate
 
 ***
 ### ls -la ###
-+ **Servidor**  Source code about configuration server.
-+ **Cerebro**   Source code about hardware control.
-+ **Utiles**    Support files.
++ **Cerebro**   Source code about complex hardware control.
++ **Controladores**  Source code about move control and basic hardware .
 + **disenio-grafico** Source code and desing files about graphics interface.
 + **disenio-mecanico** Source code and desing files about mechanics.
-+ **Android**  Mobile application source code 
++ **Servidor**  Source code about configuration server.
++ **Utiles**    Support files.
 
 ***
 ### About us ###
