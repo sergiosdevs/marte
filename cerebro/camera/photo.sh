@@ -1,6 +1,6 @@
 #!/bin/bash
 
-BASENAME='/root/camera/photos'
+BASENAME='/root/marte/cerebro/camera/photos/'
 BRIDGE=bridge
 PORT=80
 
@@ -18,7 +18,7 @@ function shot {
 
 function send {
     FILENAME=`basename $1`
-    curl -i -X POST http://bridge/photo.php?name=$FILENAME --data-binary "@$1"
+    curl -i -X POST http://bridge.pc/lib/photo.php?name=$FILENAME --data-binary "@$1"
 }
 
 shot
