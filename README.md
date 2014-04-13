@@ -86,3 +86,17 @@ The project aims to give people a resource with which they will learn to operate
 > > Telephone: +591 65780762
 > >
 > > Skills: Hacker
+>
+> Nombre: Luis Rodrigo Orellana Ferrufino
+> > email: orellana.ferrufino.bolivia@gmail.com
+> >
+> > Telephone: +591 75972751
+> >
+> > Skills: Mechanics Designer
+>
+> Nombre: Fernando Zurita Villafan
+> > email: f.zurita.iem@hotmail.com
+> >
+> > Telephone: +591 60524726
+> >
+> > Skills: Mechanics Designer
